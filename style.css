@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+header {
+    background-color: #1e293b;
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a, .nav-links li {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Sections */
+.section {
+    padding: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Categories */
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.category-buttons button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #1e293b;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Book Card */
+.book-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+    width: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.book-card h3 {
+    cursor: pointer;
+}
+
+.book-card button {
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;  /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Login & Signup Forms */
+#login, #signup {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#login input, #signup input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#login button, #signup button {
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#login button:hover, #signup button:hover {
+    background-color: #2563eb;
+}
+
+/* Cart Table */
+#cart table th {
+    background-color: #1e293b;
+    color: white;
+}
+
+#cart input[type="number"] {
+    text-align: center;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
